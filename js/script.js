@@ -1,5 +1,22 @@
-// LEX 3.0
+document.addEventListener("DOMContentLoaded",()=>{
 
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("LEX cargó correctamente.");
+const cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+card.addEventListener("mousemove",e=>{
+const rect=card.getBoundingClientRect();
+const x=e.clientX-rect.left;
+const y=e.clientY-rect.top;
+
+card.style.background=
+`radial-gradient(circle at ${x}px ${y}px,
+rgba(212,175,55,.15),
+#111 60%)`;
+});
+
+card.addEventListener("mouseleave",()=>{
+card.style.background="#111";
+});
+});
+
 });
