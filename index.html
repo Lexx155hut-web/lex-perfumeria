@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEX Perfumería Premium</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+background:#070707;
+font-family:Arial,Helvetica,sans-serif;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at top,#5a4300 0%,transparent 35%),
+radial-gradient(circle at bottom,#221700 0%,transparent 40%);
+opacity:.25;
+z-index:-1;
+}
+
+header{
+padding:80px 20px;
+text-align:center;
+}
+
+.logo{
+font-size:70px;
+font-weight:bold;
+color:#D4AF37;
+letter-spacing:3px;
+}
+
+.sub{
+color:#D4AF37;
+letter-spacing:4px;
+margin-top:8px;
+}
+
+.frase{
+margin-top:25px;
+font-size:20px;
+color:#ddd;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:15px 30px;
+background:#D4AF37;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #D4AF37;
+}
+
+section{
+padding:70px 20px;
+}
+
+h2{
+text-align:center;
+color:#D4AF37;
+margin-bottom:40px;
+font-size:35px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:#121212;
+border:1px solid rgba(212,175,55,.35);
+border-radius:25px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 30px rgba(212,175,55,.35);
+}
+
+.card img{
+width:100%;
+height:320px;
+object-fit:cover;
+}
+
+.info{
+padding:20px;
+text-align:center;
+}
+
+.info h3{
+font-size:26px;
+margin-bottom:10px;
+}
+
+.price{
+font-size:35px;
+color:#D4AF37;
+font-weight:bold;
+margin:10px 0;
+}
+
+.desc{
+color:#cfcfcf;
+margin-bottom:20px;
+line-height:1.5;
+}
+
+.buy{
+display:inline-block;
+padding:12px 24px;
+background:#D4AF37;
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.packs{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+max-width:900px;
+margin:auto;
+}
+
+.pack{
+background:#121212;
+padding:30px;
+border-radius:25px;
+border:1px solid rgba(212,175,55,.35);
+text-align:center;
+}
+
+.pack h3{
+color:#D4AF37;
+margin-bottom:15px;
+}
+
+.pack .price{
+font-size:40px;
+}
+
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+
+.box{
+background:#111;
+padding:25px;
+border-radius:18px;
+text-align:center;
+border:1px solid rgba(212,175,55,.2);
+}
+
+footer{
+padding:50px 20px;
+text-align:center;
+border-top:1px solid #222;
+}
+
+.whats{
+font-size:32px;
+color:#D4AF37;
+font-weight:bold;
+margin:20px 0;
+}
+
+@media(max-width:600px){
+.logo{font-size:50px;}
+.card img{height:260px;}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">LEX</div>
+
+<div class="sub">PERFUMERÍA PREMIUM</div>
+
+<p class="frase">Tu estilo. Tu esencia. Tu presencia.</p>
+
+<a class="btn" href="https://wa.me/51957390652">
+Comprar por WhatsApp
+</a>
+
+</header>
+
+<section>
+
+<h2>Perfumes Disponibles</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=800" alt="Khamrah">
+<div class="info">
+<h3>Khamrah</h3>
+<div class="price">S/160</div>
+<p class="desc">
+Dulce • Canela • Vainilla • Ámbar
+</p>
+<a class="buy" href="https://wa.me/51957390652?text=Hola,%20quiero%20el%20Khamrah%20de%20LEX.">
+Comprar
+</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=800" alt="9PM">
+<div class="info">
+<h3>9PM</h3>
+<div class="price">S/139</div>
+<p class="desc">
+Manzana • Tonka • Vainilla
+</p>
+<a class="buy" href="https://wa.me/51957390652?text=Hola,%20quiero%20el%209PM%20de%20LEX.">
+Comprar
+</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?w=800" alt="Asad Bourbon">
+<div class="info">
+<h3>Asad Bourbon</h3>
+<div class="price">S/150</div>
+<p class="desc">
+Amaderado • Bourbon • Vainilla
+</p>
+<a class="buy" href="https://wa.me/51957390652?text=Hola,%20quiero%20el%20Asad%20Bourbon%20de%20LEX.">
+Comprar
+</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Packs LEX</h2>
+
+<div class="packs">
+
+<div class="pack">
+<h3>Pack de Apertura</h3>
+<div class="price">S/100</div>
+<p>4 decants de 10 ml.</p>
+</div>
+
+<div class="pack">
+<h3>LEX Discovery Set</h3>
+<div class="price">S/65</div>
+<p>4 fragancias de 5 ml.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>¿Por qué elegir LEX?</h2>
+
+<div class="benefits">
+
+<div class="box">100% Originales</div>
+
+<div class="box">Delivery Gratis</div>
+
+<div class="box">Compra Segura</div>
+
+<div class="box">Tarapoto</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="logo" style="font-size:45px;">LEX</div>
+
+<p class="whats">957 390 652</p>
+
+<p>Delivery GRATIS en Tarapoto</p>
+
+<p style="margin-top:15px;color:#999;">
+© LEX Perfumería Premium
+</p>
+
+</footer>
+
+</body>
+</html>
