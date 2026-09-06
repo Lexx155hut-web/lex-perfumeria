@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEX Perfumería Premium</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    :root{
+      --gold:#D4AF37;
+      --black:#070707;
+      --dark:#111;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box;}
+
+    body{
+      background:var(--black);
+      color:white;
+      font-family:Arial,Helvetica,sans-serif;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      background:
+      radial-gradient(circle at top,#3d2c00 0%,transparent 35%),
+      radial-gradient(circle at bottom,#1b1200 0%,transparent 40%);
+    }
+
+    .logo{
+      font-size:85px;
+      color:var(--gold);
+      font-weight:bold;
+      letter-spacing:4px;
+    }
+
+    .hero p{
+      color:#ddd;
+      margin:20px 0;
+      font-size:20px;
+    }
+
+    .btn{
+      background:var(--gold);
+      color:black;
+      padding:15px 35px;
+      border-radius:40px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    section{padding:70px 20px;}
+
+    h2{
+      text-align:center;
+      color:var(--gold);
+      margin-bottom:35px;
+      font-size:34px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .card{
+      background:var(--dark);
+      border-radius:20px;
+      overflow:hidden;
+      border:1px solid rgba(212,175,55,.35);
+      transition:.35s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 0 30px rgba(212,175,55,.35);
+    }
+
+    .card img{
+      width:100%;
+      height:340px;
+      object-fit:cover;
+    }
+
+    .info{
+      padding:22px;
+      text-align:center;
+    }
+
+    .info h3{font-size:28px;}
+
+    .price{
+      color:var(--gold);
+      font-size:34px;
+      font-weight:bold;
+      margin:15px 0;
+    }
+
+    .buy{
+      display:inline-block;
+      margin-top:18px;
+      background:var(--gold);
+      color:black;
+      padding:12px 26px;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    footer{
+      padding:50px 20px;
+      text-align:center;
+      border-top:1px solid #222;
+    }
+
+    .whatsapp{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      width:65px;
+      height:65px;
+      background:#25D366;
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-decoration:none;
+      font-size:34px;
+    }
+
+    @media(max-width:600px){
+      .logo{font-size:58px;}
+      .card img{height:280px;}
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <h1 class="logo">LEX</h1>
+    <p>Tu estilo. Tu esencia. Tu presencia.</p>
+
+    <a class="btn" href="https://wa.me/51957390652">
+      Comprar por WhatsApp
+    </a>
+  </section>
+
+  <section>
+
+    <h2>Perfumes Premium</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <img src="imagenes/khamrah.jpg" alt="Khamrah">
+        <div class="info">
+          <h3>Khamrah</h3>
+          <div class="price">S/160</div>
+          <p>Dulce • Canela • Vainilla • Ámbar</p>
+          <a class="buy" href="https://wa.me/51957390652?text=Hola,%20quiero%20el%20Khamrah.">
+            Comprar
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="imagenes/9pm.jpg" alt="9PM">
+        <div class="info">
+          <h3>9PM</h3>
+          <div class="price">S/139</div>
+          <p>Manzana • Tonka • Vainilla</p>
+          <a class="buy" href="https://wa.me/51957390652?text=Hola,%20quiero%20el%209PM.">
+            Comprar
+          </a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="imagenes/asad-bourbon.jpg" alt="Asad Bourbon">
+        <div class="info">
+          <h3>Asad Bourbon</h3>
+          <div class="price">S/150</div>
+          <p>Amaderado • Bourbon • Vainilla</p>
+          <a class="buy" href="https://wa.me/51957390652?text=Hola,%20quiero%20el%20Asad%20Bourbon.">
+            Comprar
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <h2 style="margin-bottom:10px;">LEX</h2>
+    <p>Perfumería Premium • Tarapoto</p>
+    <p style="margin-top:15px;color:#aaa;">WhatsApp: 957 390 652</p>
+  </footer>
+
+  <a class="whatsapp" href="https://wa.me/51957390652">💬</a>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
